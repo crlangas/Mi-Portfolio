@@ -1,0 +1,1092 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Carlos Pilar Sanz | IT Professional Portfolio</title>
+
+    <!-- Local vendor assets -->
+    <script src="vendor/tailwind/tailwind.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
+
+    <!-- Local Google Fonts -->
+    <link rel="stylesheet" href="vendor/google-fonts/fonts.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="body-main" data-theme="dark" data-lang="en" data-dir="ltr">
+    <!-- Loading Screen -->
+    <div class="loader-screen" id="loader">
+      <div class="loader-content">
+        <div class="loader-code-text">
+          <div class="code-line" data-line="1">const portfolio = {</div>
+          <div class="code-line" data-line="2">loading: true,</div>
+          <div class="code-line" data-line="3">status: 'initializing...'</div>
+          <div class="code-line" data-line="4">};</div>
+        </div>
+        <div class="loader-spinner-wrapper">
+          <div class="loader-spinner"></div>
+        </div>
+        <div class="loader-progress-wrapper">
+          <div class="loader-progress-bar"></div>
+        </div>
+        <div class="loader-percentage" id="loaderPercent">0%</div>
+      </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="header">
+      <nav class="nav-container">
+        <div class="nav-brand">
+          <div class="brand-logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-text">CP</span>
+            <span class="logo-bracket">/&gt;</span>
+          </div>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active" data-section="home">
+            <i class="fas fa-home"></i>
+            <span class="nav-text" data-text-en="Home" data-text-es="Inicio"
+              >Home</span
+            >
+          </a>
+          <a href="#about" class="nav-link" data-section="about">
+            <i class="fas fa-user"></i>
+            <span
+              class="nav-text"
+              data-text-en="About"
+              data-text-es="Acerca de mí"
+              >About</span
+            >
+          </a>
+          <a href="#skills" class="nav-link" data-section="skills">
+            <i class="fas fa-code"></i>
+            <span
+              class="nav-text"
+              data-text-en="Skills"
+              data-text-es="Habilidades"
+              >Skills</span
+            >
+          </a>
+          <a href="#experience" class="nav-link" data-section="experience">
+            <i class="fas fa-briefcase"></i>
+            <span
+              class="nav-text"
+              data-text-en="Experience"
+              data-text-es="Experiencia"
+              >Experience</span
+            >
+          </a>
+          <a href="#projects" class="nav-link" data-section="projects">
+            <i class="fas fa-rocket"></i>
+            <span
+              class="nav-text"
+              data-text-en="Projects"
+              data-text-es="Proyectos"
+              >Projects</span
+            >
+          </a>
+          <a href="#contact" class="nav-link" data-section="contact">
+            <i class="fas fa-envelope"></i>
+            <span
+              class="nav-text"
+              data-text-en="Contact"
+              data-text-es="Contacto"
+              >Contact</span
+            >
+          </a>
+        </div>
+
+        <div class="nav-controls">
+          <button class="lang-toggle" id="langToggle" title="Toggle Language">
+            <i class="fas fa-language"></i>
+            <span class="lang-text">ES</span>
+          </button>
+          <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="menu-toggle" id="menuToggle" title="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="hero-background">
+          <div class="code-grid-bg"></div>
+          <div class="floating-particles" id="particles"></div>
+        </div>
+
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-greeting">
+              <span
+                class="greeting-text"
+                data-text-en="Carlos Pilar"
+                data-text-es="Carlos Pilar"
+                >Carlos Pilar</span
+              >
+              <span class="greeting-cursor">|</span>
+            </div>
+
+            <h1 class="hero-name" id="heroName">
+              <span class="name-prefix">const</span>
+              <span class="name-operator">=</span>
+              <span class="name-value">Developer</span>
+              <span class="name-suffix">;</span>
+            </h1>
+
+            <div class="hero-title">
+              <span class="title-prefix">//</span>
+              <span
+                class="title-text"
+                data-text-en="IT Professional & Web Developer"
+                data-text-es="Profesional IT y Desarrollador Web"
+                >IT Professional & Web Developer</span
+              >
+            </div>
+
+            <p
+              class="hero-description"
+              data-text-en="IT professional blending web development with systems administration, networking, and automation in enterprise environments."
+              data-text-es="Profesional IT que combina el desarrollo de aplicaciones web con la administración de sistemas, redes y automatización en entornos empresariales."
+            >
+              IT professional blending web development with systems
+              administration, networking, and automation in enterprise
+              environments.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">
+                <span data-text-en="Get In Touch" data-text-es="Contactar"
+                  >Get In Touch</span
+                >
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                <span data-text-en="View Projects" data-text-es="Ver Proyectos"
+                  >View Projects</span
+                >
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+
+            <div class="hero-social">
+              <a
+                href="https://github.com/crlangas"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                title="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/carlos-pilar-sanz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="mailto:carlospilarsanz@gmail.com"
+                class="social-icon"
+                title="Email"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <div class="hero-image-container">
+              <div class="profile-image-glow"></div>
+              <div class="profile-image-frame">
+                <div class="profile-image" id="profileImage">
+                  <div class="profile-placeholder">
+                    <i class="fas fa-code"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-badge badge-1">
+                <i class="fas fa-server"></i>
+                <div class="badge-content">
+                  <span class="badge-title">Datacenters</span>
+                  <span class="badge-libs"
+                    >VMware, proxmox, Virtualization</span
+                  >
+                </div>
+              </div>
+              <div class="floating-badge badge-2">
+                <i class="fab fa-docker"></i>
+                <div class="badge-content">
+                  <span class="badge-title">Docker</span>
+                  <span class="badge-libs">Services, kubernetes</span>
+                </div>
+              </div>
+              <div class="floating-badge badge-3">
+                <i class="fas fa-network-wired"></i>
+                <div class="badge-content">
+                  <span class="badge-title">Networking</span>
+                  <span class="badge-libs">VPN, Firewalls</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+          </div>
+          <span
+            class="scroll-text"
+            data-text-en="Scroll Down"
+            data-text-es="Desplazar hacia abajo"
+            >Scroll Down</span
+          >
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">
+              <span class="title-bracket">&lt;</span>
+              <span
+                class="title-text"
+                data-text-en="About Me"
+                data-text-es="Acerca de mí"
+                >About Me</span
+              >
+              <span class="title-bracket">/&gt;</span>
+            </h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="about-content">
+            <div class="about-text-wrapper">
+              <div class="about-intro">
+                <p
+                  class="about-text"
+                  data-text-en="I'm an IT professional with a background in web application development and systems administration. I work across enterprise environments, combining software development with infrastructure management, networking, and technology support &mdash; from web apps to servers, virtualization, automation, and cybersecurity. I'm proactive and adaptable, with a strong interest in continuous learning, digital transformation, and efficient IT solutions."
+                  data-text-es="Soy un profesional IT con experiencia en desarrollo de aplicaciones web y administración de sistemas. Trabajo en entornos empresariales combinando desarrollo de software con gestión de infraestructura, redes y soporte tecnológico, desde aplicaciones web hasta servidores, virtualización, automatización y ciberseguridad. Soy una persona proactiva y adaptable, con interés en el aprendizaje continuo, la transformación digital y las soluciones IT eficientes."
+                >
+                  I'm an IT professional with a background in web application
+                  development and systems administration. I work across
+                  enterprise environments, combining software development with
+                  infrastructure management, networking, and technology support
+                  &mdash; from web apps to servers, virtualization, automation,
+                  and cybersecurity. I'm proactive and adaptable, with a strong
+                  interest in continuous learning, digital transformation, and
+                  efficient IT solutions.
+                </p>
+              </div>
+
+              <div class="about-stats">
+                <div class="stat-item">
+                  <div class="stat-number" data-count="4">0</div>
+                  <div
+                    class="stat-label"
+                    data-text-en="Years in IT"
+                    data-text-es="Años en IT"
+                  >
+                    Years in IT
+                  </div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number" data-count="20">0</div>
+                  <div
+                    class="stat-label"
+                    data-text-en="Technologies"
+                    data-text-es="Tecnologías"
+                  >
+                    Technologies
+                  </div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number" data-count="2">0</div>
+                  <div
+                    class="stat-label"
+                    data-text-en="Vocational Degrees"
+                    data-text-es="Títulos de FP"
+                  >
+                    Vocational Degrees
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-image-wrapper">
+              <div class="about-image-container">
+                <div class="code-block">
+                  <div class="code-line">
+                    <span class="code-keyword">const</span>
+                    <span class="code-variable">professional</span>
+                    <span class="code-operator">=</span>
+                    <span class="code-brace">{</span>
+                  </div>
+                  <div class="code-line indent">
+                    <span class="code-property">name</span>
+                    <span class="code-operator">:</span>
+                    <span class="code-string">'Carlos Pilar Sanz'</span>
+                    <span class="code-comma">,</span>
+                  </div>
+                  <div class="code-line indent">
+                    <span class="code-property">stack</span>
+                    <span class="code-operator">:</span>
+                    <span class="code-bracket">[</span>
+                    <span class="code-string">'Linux'</span>
+                    <span class="code-comma">,</span>
+                    <span class="code-string">'Docker'</span>
+                    <span class="code-comma">,</span>
+                    <span class="code-string">'React'</span>
+                    <span class="code-comma">,</span>
+                    <span class="code-string">'...'</span>
+                    <span class="code-bracket">]</span>
+                    <span class="code-comma">,</span>
+                  </div>
+                  <div class="code-line indent">
+                    <span class="code-property">focus</span>
+                    <span class="code-operator">:</span>
+                    <span class="code-string">'Dev + Ops'</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="code-brace">}</span>
+                    <span class="code-semicolon">;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section skills-section">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">
+              <span class="title-bracket">&lt;</span>
+              <span
+                class="title-text"
+                data-text-en="Skills"
+                data-text-es="Habilidades"
+                >Skills</span
+              >
+              <span class="title-bracket">/&gt;</span>
+            </h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3
+                class="category-title"
+                data-text-en="Web Development"
+                data-text-es="Desarrollo Web"
+              >
+                Web Development
+              </h3>
+              <div class="skill-items">
+                <div
+                  class="skill-item"
+                  data-skill="React + Vite"
+                  data-percent="75"
+                >
+                  <div class="skill-header">
+                    <span class="skill-name">React + Vite</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="Node.js" data-percent="70">
+                  <div class="skill-header">
+                    <span class="skill-name">Node.js</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div
+                  class="skill-item"
+                  data-skill="JavaScript"
+                  data-percent="80"
+                >
+                  <div class="skill-header">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div
+                  class="skill-item"
+                  data-skill="PHP / Laravel"
+                  data-percent="60"
+                >
+                  <div class="skill-header">
+                    <span class="skill-name">PHP / Laravel</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3
+                class="category-title"
+                data-text-en="Systems Administration"
+                data-text-es="Administración de Sistemas"
+              >
+                Systems Administration
+              </h3>
+              <div class="skill-items">
+                <div class="skill-item" data-skill="Linux" data-percent="85">
+                  <div class="skill-header">
+                    <span class="skill-name">Linux</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div
+                  class="skill-item"
+                  data-skill="Windows Server"
+                  data-percent="75"
+                >
+                  <div class="skill-header">
+                    <span class="skill-name">Windows Server</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="VMware" data-percent="80">
+                  <div class="skill-header">
+                    <span class="skill-name">VMware</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div
+                  class="skill-item"
+                  data-skill="Proxmox / Docker"
+                  data-percent="80"
+                >
+                  <div class="skill-header">
+                    <span class="skill-name">Proxmox / Docker</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3
+                class="category-title"
+                data-text-en="Networking & Security"
+                data-text-es="Redes y Seguridad"
+              >
+                Networking & Security
+              </h3>
+              <div class="skill-items">
+                <div
+                  class="skill-item"
+                  data-skill="VPNs & Networking"
+                  data-percent="80"
+                >
+                  <div class="skill-header">
+                    <span class="skill-name">VPNs & Networking</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div
+                  class="skill-item"
+                  data-skill="Fortinet Firewalls"
+                  data-percent="70"
+                >
+                  <div class="skill-header">
+                    <span class="skill-name">Fortinet Firewalls</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="Ubiquiti" data-percent="70">
+                  <div class="skill-header">
+                    <span class="skill-name">Ubiquiti</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div
+                  class="skill-item"
+                  data-skill="EDR / Security Monitoring"
+                  data-percent="65"
+                >
+                  <div class="skill-header">
+                    <span class="skill-name">EDR / Security Monitoring</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3
+                class="category-title"
+                data-text-en="Automation & Databases"
+                data-text-es="Automatización y Bases de Datos"
+              >
+                Automation & Databases
+              </h3>
+              <div class="skill-items">
+                <div class="skill-item" data-skill="n8n" data-percent="75">
+                  <div class="skill-header">
+                    <span class="skill-name">n8n</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div
+                  class="skill-item"
+                  data-skill="API Integrations"
+                  data-percent="75"
+                >
+                  <div class="skill-header">
+                    <span class="skill-name">API Integrations</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div
+                  class="skill-item"
+                  data-skill="AI Agents / MCP"
+                  data-percent="60"
+                >
+                  <div class="skill-header">
+                    <span class="skill-name">AI Agents / MCP</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+                <div class="skill-item" data-skill="SQL" data-percent="75">
+                  <div class="skill-header">
+                    <span class="skill-name">SQL</span>
+                    <span class="skill-percent">0%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section experience-section">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">
+              <span class="title-bracket">&lt;</span>
+              <span
+                class="title-text"
+                data-text-en="Experience & Education"
+                data-text-es="Experiencia y Formación"
+                >Experience & Education</span
+              >
+              <span class="title-bracket">/&gt;</span>
+            </h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-year">2024</div>
+                </div>
+                <h3
+                  class="timeline-title"
+                  data-text-en="Systems Administrator"
+                  data-text-es="Administrador de Sistemas"
+                >
+                  Systems Administrator
+                </h3>
+                <div class="timeline-company">
+                  <i class="fas fa-building"></i>
+                  Huercasa 5ª gama – Sanchonuño, Spain
+                </div>
+                <p
+                  class="timeline-description"
+                  data-text-en="Administered and maintained enterprise IT environments, managing virtualized infrastructure with VMware and Proxmox, and supporting Windows and Linux systems. Configured networks, VPNs, and security settings, and monitored security events using EDR solutions."
+                  data-text-es="Administré y mantuve entornos de TI empresariales, gestionando infraestructura virtualizada con VMware y Proxmox, y dando soporte a sistemas Windows y Linux. Configuré redes, VPNs y ajustes de seguridad, y supervisé eventos de seguridad mediante soluciones EDR."
+                >
+                  Administered and maintained enterprise IT environments,
+                  managing virtualized infrastructure with VMware and Proxmox,
+                  and supporting Windows and Linux systems. Configured networks,
+                  VPNs, and security settings, and monitored security events
+                  using EDR solutions.
+                </p>
+                <div class="timeline-achievements">
+                  <div class="achievement-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span
+                      data-text-en="Managed VMware & Proxmox virtualized environments"
+                      data-text-es="Gestioné entornos virtualizados con VMware y Proxmox"
+                      >Managed VMware & Proxmox virtualized environments</span
+                    >
+                  </div>
+                  <div class="achievement-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span
+                      data-text-en="Provided technical support for users & corporate equipment"
+                      data-text-es="Brindé soporte técnico a usuarios y equipos corporativos"
+                      >Provided technical support for users & corporate
+                      equipment</span
+                    >
+                  </div>
+                  <div class="achievement-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span
+                      data-text-en="Monitored security events with EDR solutions"
+                      data-text-es="Supervisé eventos de seguridad con soluciones EDR"
+                      >Monitored security events with EDR solutions</span
+                    >
+                  </div>
+                </div>
+                <div class="timeline-tags">
+                  <span class="tag">VMware</span>
+                  <span class="tag">Proxmox</span>
+                  <span class="tag">Linux</span>
+                  <span class="tag">Windows</span>
+                  <span class="tag">VPN</span>
+                  <span class="tag">Fortinet</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-year">2022 - 2024</div>
+                </div>
+                <h3
+                  class="timeline-title"
+                  data-text-en="Vocational Degree in Microcomputer Systems and Networks"
+                  data-text-es="Grado en Sistemas Microinformáticos y Redes"
+                >
+                  Vocational Degree in Microcomputer Systems and Networks
+                </h3>
+                <div class="timeline-company">
+                  <i class="fas fa-graduation-cap"></i>
+                  IES Jaime Gil de Biedma – Segovia, Spain
+                </div>
+                <p
+                  class="timeline-description"
+                  data-text-en="Training in computer system installation and maintenance, networking, virtualization, and IT support, building the foundation for systems administration."
+                  data-text-es="Formación en instalación y mantenimiento de sistemas informáticos, redes, virtualización y soporte técnico, sentando las bases para la administración de sistemas."
+                >
+                  Training in computer system installation and maintenance,
+                  networking, virtualization, and IT support, building the
+                  foundation for systems administration.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Networking</span>
+                  <span class="tag">Virtualization</span>
+                  <span class="tag">IT Support</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-year">2018 - 2022</div>
+                </div>
+                <h3
+                  class="timeline-title"
+                  data-text-en="Higher Vocational Degree in Web Application Development"
+                  data-text-es="Grado Superior en Desarrollo de Aplicaciones Web"
+                >
+                  Higher Vocational Degree in Web Application Development
+                </h3>
+                <div class="timeline-company">
+                  <i class="fas fa-graduation-cap"></i>
+                  IES María Moliner – Segovia, Spain
+                </div>
+                <p
+                  class="timeline-description"
+                  data-text-en="Training in front-end and back-end web development, databases, and object-oriented programming, building the foundation for software development."
+                  data-text-es="Formación en desarrollo web front-end y back-end, bases de datos y programación orientada a objetos, sentando las bases para el desarrollo de software."
+                >
+                  Training in front-end and back-end web development, databases,
+                  and object-oriented programming, building the foundation for
+                  software development.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">PHP</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">OOP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section projects-section">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title">
+              <span class="title-bracket">&lt;</span>
+              <span
+                class="title-text"
+                data-text-en="Projects"
+                data-text-es="Proyectos"
+                >Projects</span
+              >
+              <span class="title-bracket">/&gt;</span>
+            </h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/crlangas"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                      title="View Code"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-placeholder">
+                  <i class="fas fa-server"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3
+                  class="project-title"
+                  data-text-en="Personal Infrastructure Project"
+                  data-text-es="Proyecto de Infraestructura Personal"
+                >
+                  Personal Infrastructure Project
+                </h3>
+                <p
+                  class="project-description"
+                  data-text-en="Self-hosted homelab built on Ubuntu Server, running containerized services with Docker and secure remote access through a WireGuard VPN, with custom network services and infrastructure configuration."
+                  data-text-es="Homelab autogestionado sobre Ubuntu Server, con servicios en contenedores mediante Docker y acceso remoto seguro a través de una VPN WireGuard, además de servicios de red e infraestructura configurados a medida."
+                >
+                  Self-hosted homelab built on Ubuntu Server, running
+                  containerized services with Docker and secure remote access
+                  through a WireGuard VPN, with custom network services and
+                  infrastructure configuration.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Ubuntu Server</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">WireGuard VPN</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://carlosp.dpdns.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                      title="View Website"
+                    >
+                      <i class="fas fa-globe"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-placeholder">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3
+                  class="project-title"
+                  data-text-en="Personal Portfolio"
+                  data-text-es="Portafolio Personal"
+                >
+                  Personal Portfolio
+                </h3>
+                <p
+                  class="project-description"
+                  data-text-en="Interactive professional portfolio showcasing IT expertise, skills, and projects. Built with responsive web design, multilingual support for English and Spanish, dark/light theme toggle, and smooth animations to create an engaging user experience."
+                  data-text-es="Portafolio profesional interactivo que exhibe experiencia, habilidades y proyectos en tecnología IT. Construido con diseño responsivo, soporte multilingüe en inglés y español, alternancia de tema oscuro/claro, y animaciones suaves para una experiencia de usuario atractiva."
+                >
+                  Interactive professional portfolio showcasing IT expertise,
+                  skills, and projects. Built with responsive web design,
+                  multilingual support for English and Spanish, dark/light theme
+                  toggle, and smooth animations to create an engaging user
+                  experience.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-number">05</span>
+            <h2 class="section-title">
+              <span class="title-bracket">&lt;</span>
+              <span
+                class="title-text"
+                data-text-en="Contact"
+                data-text-es="Contacto"
+                >Contact</span
+              >
+              <span class="title-bracket">/&gt;</span>
+            </h2>
+            <div class="section-line"></div>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4
+                    class="contact-label"
+                    data-text-en="Email"
+                    data-text-es="Correo electrónico"
+                  >
+                    Email
+                  </h4>
+                  <a
+                    href="mailto:carlospilarsanz@gmail.com"
+                    class="contact-value"
+                    >carlospilarsanz@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4
+                    class="contact-label"
+                    data-text-en="Phone"
+                    data-text-es="Teléfono"
+                  >
+                    Phone
+                  </h4>
+                  <a href="tel:+34693431925" class="contact-value"
+                    >693 43 19 25</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4
+                    class="contact-label"
+                    data-text-en="Location"
+                    data-text-es="Ubicación"
+                  >
+                    Location
+                  </h4>
+                  <span
+                    class="contact-value"
+                    data-text-en="Cuéllar, Spain"
+                    data-text-es="Cuéllar, España"
+                    >Cuéllar, Spain</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Name"
+                  data-placeholder-en="Name"
+                  data-placeholder-es="Nombre"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="Email"
+                  data-placeholder-en="Email"
+                  data-placeholder-es="Correo electrónico"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Subject"
+                  data-placeholder-en="Subject"
+                  data-placeholder-es="Asunto"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-input form-textarea"
+                  rows="5"
+                  placeholder="Message"
+                  data-placeholder-en="Message"
+                  data-placeholder-es="Mensaje"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span data-text-en="Send Message" data-text-es="Enviar mensaje"
+                  >Send Message</span
+                >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-text-wrapper">
+            <p class="footer-text">
+              <span class="footer-copyright">© 2026 Carlos Pilar Sanz</span>
+              <span class="footer-divider">•</span>
+              <span
+                class="footer-built"
+                data-text-en="Built with code and curiosity"
+                data-text-es="Construido con código y curiosidad"
+                >Built with code and curiosity</span
+              >
+            </p>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://github.com/crlangas"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-link"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/carlos-pilar-sanz"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-social-link"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="mailto:carlospilarsanz@gmail.com"
+              class="footer-social-link"
+              title="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/animejs/anime.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
